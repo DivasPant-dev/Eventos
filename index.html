@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+        <h1>Eventos</h1>
+        <span class="subtitle">
+            This website provides some upcoming events.
+        </span>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search events..." ondblclick="double()" autocomplete="off">
+            <span class="tooltip">Double click to clear</span>
+            <ul id="suggestions"></ul>
+        </div>  
+    </section>
+    <main>
+        <div class="events-grid" id="events-grid">
+            <!-- Events will be rendered here by JS -->
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>    Built with ❤️ by
+    <a href="https://www.github.com/divaspant-dev/" target="_blank" class="credit-link">Divas Pant</a> &  ChatGPT</p>
+    </footer>
+
+
+    <script src="./index.js"></script>
+</body>
+</html>
