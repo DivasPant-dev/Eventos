@@ -246,7 +246,7 @@ function renderEvents(eventList) {
                 <div class="event-card ${typeClass}" style="cursor:pointer;" onclick="window.open('${newsUrl}', '_blank', 'noopener')">
                   <div class="event-title">${event.title}</div>
                   <div class="event-date">
-                    ${new Date(event.date).toLocaleDateString(undefined, {
+                    ${new Date(event.date).toLocaleDateString("en-Uk", {
                       year: 'numeric', month: 'long', day: 'numeric'
                     })}
                   </div>
