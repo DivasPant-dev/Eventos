@@ -14,8 +14,16 @@
             This website provides some upcoming events.
         </span>
         <div class="search-container">
-            <input type="text" id="search-bar" placeholder="Search events..." ondblclick="double()" autocomplete="off">
-            <span class="tooltip">Double click to clear</span>
+            <div class="my">
+                <div class="searchWrapper">
+                    <input type="text" id="search-bar" placeholder="Search events..." ondblclick="double()" autocomplete="off">
+                    <span class="tooltip">Double click to clear</span>
+                </div>
+                <div class="buttons">
+                    <button class="day dark"><img src="./svg/sun.svg" alt="Sun"></button>
+                    <button class="night"><img src="./svg/moon.svg" alt="Moon"></button>
+                </div>
+            </div>
             <ul id="suggestions"></ul>
         </div>  
     </section>
@@ -26,11 +34,12 @@
     </main>
 
     <footer class="site-footer">
-        <p>    Built with ❤️ by
+        <p class="footerText">    Built with ❤️ by
     <a href="https://www.github.com/divaspant-dev/" target="_blank" class="credit-link">Divas Pant</a> &  ChatGPT</p>
     </footer>
 
 
-    <script src="./index.js"></script>
+    <script src="./index.js" defer></script>
+    <script src="./dayNight.js" defer></script>
 </body>
 </html>
