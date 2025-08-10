@@ -155,14 +155,6 @@ const events = [
 
   // Religions
   {
-    title: "Raksha Bandhan",
-    date: "2025-08-09",
-    type: "Religious Festival",
-    category: "Religious Festivals",
-    hyped: false,
-    section: "Exclusive",
-  },
-  {
     title: "Ganesh Chaturthi",
     date: "2025-08-27",
     type: "Religious Festival",
@@ -332,3 +324,4 @@ renderEvents(events);
 const double = function() {
     window.location.reload();
 }
+
