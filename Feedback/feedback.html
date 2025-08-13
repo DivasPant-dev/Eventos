@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Feedback</title>
+
+    <link rel="stylesheet" href="fstyle.css">
+</head>
+<body>
+    <a class="back" href="../index.html">🔙</a>
+    <main id="main">
+        <section id="heading">
+            <div class="heading">
+                <img src="../svg/feedback.png" alt="Feedback" class="svg" height="50px" width="50px">
+                <h1 class="headingTitle">Feedback</h1>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="normal">
+            <h1 class="title">How do you think about Eventos?</h1>
+            <p class="subTitle">Your feedback is valuable in our better understand of your needs and shape our website accordingly.</p>
+
+            <div class="emojiDiv">
+                <div class="wrapDiv">
+                    <span class="emoji" data-value="0">😖</span>
+                </div>
+                <div class="wrapDiv">
+                    <span class="emoji" data-value="1">😔</span>
+                    
+                </div>
+                <div class="wrapDiv">
+                    <span class="emoji active" data-value="2">😑</span>
+                    
+                </div>
+                <div class="wrapDiv">
+                    <span class="emoji" data-value="3">🙂</span>
+                    
+                </div>
+                <div class="wrapDiv">
+                    <span class="emoji" data-value="4">🥰</span>
+                    
+                </div>
+            </div>
+            <p class="label">Average</p>
+        </section>      
+
+        <section id="input">
+            <textarea id="comment" placeholder="Add a comment..."></textarea>
+
+            <button class="submit" onclick="submit()">
+                Submit Now
+            </button>
+        </section>
+    </main>
+
+    <script src="./feedback.js"></script>
+</body>
+</html>
