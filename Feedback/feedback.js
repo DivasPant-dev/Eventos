@@ -21,6 +21,13 @@ emojis.forEach(emoji => {
     });
 });
 
-const submit = function() {
-    alert("Sorry, sending feedback is in development.") 
-};
+submitBtn.addEventListener("click", function(e){
+    const subject = `Feedback! (${quality[selectedValue]})`;
+    const body = commentInput.value;
+    const mailtoLink = `mailto:pikachueatsberry03@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    submitBtn.href = mailtoLink;
+    submitBtn.click();
+});
+
+
+submitBtn.addEventListener("click", submit);
